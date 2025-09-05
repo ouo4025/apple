@@ -707,7 +707,7 @@ header .ham{
 .section05 .section05-bg{
   width: 100%;
   position: absolute;
-  top: -550px;
+  bottom: 550px;
   left: 0;
   position: relative;
 }
@@ -736,6 +736,12 @@ header .ham{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@media(max-width:1400px){
+  .section05 .section05-bg{
+  bottom: 0;
+}
 }
 
 /* footer */
@@ -799,3 +805,23 @@ footer .f-info span{
   margin-right: 1.25rem;
 }
 
+@media(max-width:1460px){
+  footer{
+    padding: 8rem 1.8rem;
+  }
+}
+
+@media(max-width:650px){
+  footer .f-flex{
+  flex-wrap: wrap;
+}
+
+footer .f-flex > li{
+  width: 100%;
+}
+
+footer .f-info{
+  font-size: 0.8rem;
+}
+
+}
